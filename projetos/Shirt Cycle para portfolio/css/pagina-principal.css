@@ -1,0 +1,297 @@
+
+    /* Reset e estilos globais */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* Estilos do corpo da página */
+    body {
+      background: linear-gradient(120deg, #0d0d0d, #2b0f00, #ff5f00);
+      background-attachment: fixed;
+      color: #fff;
+    }
+
+    /* Estilos da navbar */
+    .main-navbar {
+      background: rgba(0, 0, 0, 0.4);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .navbar-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 40px 10px 40px;
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-center {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 8px 12px;
+      border: 1px solid #ffa200;
+      backdrop-filter: blur(8px);
+      min-width: 320px;
+      max-width: 400px;
+      width: 100%;
+    }
+
+    .search-bar input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 16px;
+      outline: none;
+      width: 250px;
+    }
+
+    .search-bar input::placeholder {
+      color: #bbb;
+    }
+
+    .search-bar button {
+      background: #ffa200;
+      border: none;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+      margin-left: 8px;
+    }
+
+    .search-bar button:hover {
+      background: #ffbe4d;
+    }
+
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .nav-icon-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .nav-label {
+      font-size: 14px;
+      color: #fff;
+    }
+
+    .navbar-menu {
+      background: rgba(0, 0, 0, 0.4);
+      border-top: 1px solid #222;
+      padding: 0 40px;
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-menu ul {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      list-style: none;
+      padding: 12px 0;
+      margin: 0;
+      animation: slideDown 0.4s ease-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .navbar-menu ul li {
+      position: relative;
+      animation: fadeInUp 0.5s ease-out;
+      animation-fill-mode: both;
+    }
+
+    .navbar-menu ul li:nth-child(1) { animation-delay: 0.1s; }
+    .navbar-menu ul li:nth-child(2) { animation-delay: 0.2s; }
+    .navbar-menu ul li:nth-child(3) { animation-delay: 0.3s; }
+    .navbar-menu ul li:nth-child(4) { animation-delay: 0.4s; }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .navbar-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 500;
+      transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      padding: 8px 12px;
+      border-radius: 6px;
+      display: block;
+      position: relative;
+    }
+
+    .navbar-menu a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, #ffa200, #ffbe4d);
+      transform: translateX(-50%);
+      transition: width 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .navbar-menu a:hover {
+      color: #ffa200;
+      background: rgba(255, 162, 0, 0.1);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(255, 162, 0, 0.25);
+    }
+
+    .navbar-menu a:hover::before {
+      width: 100%;
+    }
+
+    .navbar-menu a.active {
+      color: #ffa200;
+      background: rgba(255, 162, 0, 0.2);
+      box-shadow: 0 2px 12px rgba(255, 162, 0, 0.3);
+    }
+
+    .navbar-menu a.active::before {
+      width: 100%;
+    }
+
+    /* Estilos do container e cards */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 60px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+
+    .card {
+      background: #111;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(255, 94, 0, 0.4);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 15px;
+    }
+
+    .info {
+      margin-bottom: 15px;
+    }
+
+    .info h2 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .info span {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .preco {
+      font-size: 18px;
+      font-weight: 600;
+      color: #ffda40;
+      margin-bottom: 14px;
+    }
+
+    .btn-trocar {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #ffa200;
+      color: #000;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-trocar:hover {
+      background: #ffbe4d;
+    }
+
+    .carrinho {
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .carrinho:hover {
+      transform: scale(1.1);
+    }
+
+    /* Estilos do footer */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 136px;
+    }
+
+    footer a {
+      color: #ffa200;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #ffbe4d;
+    }
+  

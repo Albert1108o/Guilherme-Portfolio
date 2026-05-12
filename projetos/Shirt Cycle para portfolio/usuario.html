@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - ShirtCycle</title>
+  <link rel="stylesheet" href="css/usuario.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+  <!-- Seção do cabeçalho com navbar -->
+  <header class="main-navbar">
+
+    <!--Navbar superior-->
+    <div class="navbar-top">
+
+      <!--Navbar a esquerda-->
+      <div class="navbar-left">
+        <span class="logo" style="font-size:28px; font-weight:700; color:#ffa200; margin-right:16px;">ShirtCycle</span>
+        <img src="imgs/favicon.ico.jpg" alt="Logo" style="height:48px;">
+      </div>
+
+      <nav class="navbar-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Coleção</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+      
+      <!--Navbar a direita-->
+      <div class="navbar-right">
+        <a href="usuario.html"><img src="imgs/user.png" alt="Minha conta" style="height:28px; margin-right:24px;"></a>
+        <a href="carrinho.html"><img src="imgs/shopping-cart.png" alt="Meu carrinho" style="height:28px;"></a>
+      </div>
+    </div>
+
+    <!-- Navbar inferior -->
+    
+  </header>
+
+  <!-- FORMULÁRIO DE CADASTRO -->
+  <div class="container">
+    <h1 class="form-title">Criar Conta</h1>
+
+    <!--Nome completo-->
+    <form id="cadastroForm">
+      <div class="form-group">
+        <label for="nome">Nome Completo *</label>
+        <input type="text" id="nome" name="nome" placeholder="João Silva" required>
+      </div>
+
+      <!--Email-->
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+
+      <!--Telefone/WhatsApp-->
+      <div class="form-group">
+        <label for="telefone">Telefone/WhatsApp</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(85) 98765-4321">
+      </div>
+
+      <!--CPF-->
+      <div class="form-group">
+        <label for="cpf">CPF *</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+      </div>
+
+      <!--Endereço-->
+      <div class="form-group">
+        <label for="endereco">Endereço</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Rua, número, complemento">
+      </div>
+
+      <!--Senha e Confirmar Senha-->
+      <div class="password-group">
+        <div class="form-group">
+          <label for="senha">Senha *</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+
+        <div class="form-group">
+          <label for="confirma_senha">Confirmar Senha *</label>
+          <input type="password" id="confirma_senha" name="confirma_senha" placeholder="Confirme a senha" required>
+        </div>
+      </div>
+
+      <!--Termos e Condições-->
+      <div class="form-checkbox">
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Concordo com os <a href="#" style="color: #ffa200;">Termos de Serviço</a> e <a href="#" style="color: #ffa200;">Política de Privacidade</a></label>
+      </div>
+
+      <button type="submit" class="submit-btn">Criar Conta</button>
+
+      <!-- Link para login -->
+      <div class="login-link">
+        <p>Já tem uma conta? <a href="#">Faça login aqui</a></p>
+      </div>
+    </form>
+  </div>
+
+  <!-- Rodapé da página -->
+  <footer>
+    <p>© 2025 ShirtCycle - Todos os direitos reservados</p>
+    <p>Contato: <a href="mailto:contato@shirtcycle.com">contato@shirtcycle.com</a> | WhatsApp: (85) 91234-5678</p>
+    <p>Endereço: Rua Angelica Gurguel, 123 - Fortaleza, CE</p>
+  </footer>
+
+  <script>
+    document.getElementById('cadastroForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const senha = document.getElementById('senha').value;
+      const confirma = document.getElementById('confirma_senha').value;
+
+      if (senha !== confirma) {
+        alert('As senhas não conferem!');
+        return;
+      }
+
+      if (senha.length < 6) {
+        alert('A senha deve ter pelo menos 6 caracteres!');
+        return;
+      }
+
+      // Aqui você pode enviar os dados para o servidor
+      alert('Cadastro realizado com sucesso!');
+      // this.submit(); // Descomente para enviar ao servidor
+    });
+  </script>
+
+</body>
+</html>

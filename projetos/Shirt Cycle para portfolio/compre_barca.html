@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troque sua camisa!</title>
+    <link rel="stylesheet" href="css/compre-barca.css">
+      <link rel="icon" href="imgs/favicon.ico.jpg" type="image/x-icon">
+       <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Montserrat:wght@600&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    
+       
+    </style>
+</head>
+<body>
+
+   <!-- Seção do cabeçalho com navbar -->
+  <header class="main-navbar">
+
+    <!--Navbar superior-->
+    <div class="navbar-top">
+
+      <!--Navbar a esquerda-->
+      <div class="navbar-left">
+        <span class="logo" style="font-size:28px; font-weight:700; color:#ffa200; margin-right:16px;">ShirtCycle</span>
+        <img src="imgs/favicon.ico.jpg" alt="Logo" style="height:48px;">
+      </div>
+
+      <nav class="navbar-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Coleção</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+
+      
+      <!--Navbar a direita-->
+      <div class="navbar-right">
+        <a href="usuario.html"><img src="imgs/user.png" alt="Minha conta" style="height:28px; margin-right:24px;"></a>
+        <a href="carrinho.html"><img src="imgs/shopping-cart.png" alt="Meu carrinho" style="height:28px;"></a>
+      </div>
+    </div>
+
+    <!-- Navbar inferior -->
+    
+  </header>
+
+
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <img src="imgs/camisa-retro-barcelona-14-15-home-nike-vermelho-azul-imagem1-jpeg11-5f0092def4915a3cf616942218174651-640-0.jpeg.jpg" alt="">
+            </div>
+
+            <div class="card">
+                <h3>Camisa Barcelona Retrô Home 2014/2015 </h3>
+                <p class="rating">★★★★☆ (89 avaliações)</p>
+                <hr>
+                <span style="display: flex; align-items: center;">
+                    <img src="imgs/football-card.png" alt="Cartão" style="width:24px; height:24px; margin-right:8px;">
+                    <p class="price" style="margin: 0;">80 Cartões</p>
+                </span>
+                <div class="credit-row">
+                </div>
+                <h3>TAMANHO: <span id="tamanhoSelecionado">P</span></h3>
+                    <div class="tamanhos">
+                        <div class="opcao selecionado" data-valor="P">P</div>
+                        <div class="opcao" data-valor="M">M</div>
+                        <div class="opcao" data-valor="G">G</div>
+                        <div class="opcao" data-valor="GG">GG</div>
+                        <div class="opcao" data-valor="XG">XG</div>
+                        <div class="opcao" data-valor="XXG">XXG</div>
+                    </div> <br>
+                   <div class="compre">
+                    <div class="contador">
+                        <button class="btn" id="menos">-</button>
+                        <span class="valor" id="quantidade">1</span>
+                        <button class="btn" id="mais">+</button>
+                        
+                    </div>
+                        <button>Troque agora</button>
+                    </div> 
+
+            </div>
+        </div>
+
+        <script>
+    const opcoes = document.querySelectorAll(".opcao");
+    const spanSelecionado = document.getElementById("tamanhoSelecionado");
+
+    opcoes.forEach(opcao => {
+      opcao.addEventListener("click", () => {
+        // Remove a classe "selecionado" de todas
+        opcoes.forEach(o => o.classList.remove("selecionado"));
+
+        // Adiciona a classe "selecionado" na clicada
+        opcao.classList.add("selecionado");
+
+        // Atualiza o texto mostrado
+        spanSelecionado.textContent = opcao.dataset.valor;
+      });
+    });
+
+    const menos = document.getElementById("menos");
+    const mais = document.getElementById("mais");
+    const quantidade = document.getElementById("quantidade");
+
+    let valor = 1;
+
+    mais.addEventListener("click", () => {
+      valor++;
+      quantidade.textContent = valor;
+    });
+
+    menos.addEventListener("click", () => {
+      if (valor > 1) { // evita número menor que 1
+        valor--;
+        quantidade.textContent = valor;
+      }
+    });
+  </script>
+    </main>
+    <footer>
+  <p>© 2025 Loja de Camisas - Todos os direitos reservados</p>
+  <p>Contato: <a href="mailto:contato@shirtcycle.com" style="color: #ff6347;">contato@shirtcycle.com</a> | WhatsApp: (85) 91234-5678</p>
+  <p>Endereço: Rua Angelica Gurguel, 123 - Fortaleza, CE</p>
+</footer>
+</body>
+</html>
+

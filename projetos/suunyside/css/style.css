@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    background-color: #3ebfff;
+    padding: bottom 30px;
+    height: 800px;
+    font-size: 19px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sunny{
+    display: inline-block;
+    color: white;
+    margin-right: 800px;
+    margin-top: 30px;
+    
+}
+
+.about{
+    display: inline-block;
+    color: white;
+   /* margin-right: 40px;*/
+    margin-top: 20px;
+}
+
+.services{
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+}
+
+.proj{
+    display: inline-block;
+    color: white;
+    margin-top: 20px;
+}
+
+.cont{
+    display: inline-block;
+    color: black;
+    background-color:white ;
+    border-radius: 30px;
+    padding: 17px 14px 20px 17px;
+    margin-top: 20px;
+    
+}
+.cont:hover{
+    background-color: #3dbeff;
+    color: white;
+    transition: 0.5s;
+    
+    
+}
+
+.creative{
+    color: white;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 35px;
+    letter-spacing: 5px;
+
+}
+
+.seta{
+    margin-left: 49%;
+    margin-top: 80px;
+}
+
+
+
+.descricao1{
+    display: flex;
+    
+   
+}
+
+.frases{
+    display: flex;
+    flex-direction: column;
+}
+
+.frase1{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: 150px;
+    margin-left: 100px;
+}   
+
+.frase2{
+    font-size: 20px;
+    display: inline-flex;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 0.7;
+}
+
+.learn{
+    font-size: 14px;
+    display: inline-flex;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 100px;
+    
+}
+
+.bar-amarelo{
+    background-color: yellow;
+    height: 4px;
+    width: 100px;
+    display: inline-flex;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-left: 100px;
+    border-radius: 10%; 
+}
+
+.bar-vermelho{
+    background-color: red;
+    height: 4px;
+    width: 100px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 100px;
+    border-radius: 10%;
+}
+
+
+
+.imagens{
+  display: flex;
+  flex-direction:column;
+  align-items: flex-start;
+}
+
+        
+.ovo img{
+    height: 550px;
+    width: 745px;
+    margin-left: 10px;
+}
+
+
+.copo img{
+    height: 550px;
+    width: 745px;
+    margin-left: 0;
+    display: inline-block;
+}
+
+.card-copo{
+    display: flex;
+    flex-direction: row;
+}
+
+.stand{
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-top: 150px;
+    margin-left: 100px;
+}
+
+.frase3{
+    font-size: 20px;
+    display: inline-flex;
+    margin-right: 0px;
+    margin-top: 40px;
+    margin-left: 100px;
+    opacity: 0.7;
+}
+
+.cards-finais{
+    display: flex;
+    flex-direction:row
+}
+
+.cereja{
+     width: 745px;
+     height: 550px;
+}
+
+.laranja{
+     width: 775px;
+     height: 550px;
+     margin-right: 0;
+}
+
+h2{
+    text-align: center;
+    opacity: 0.7;
+    letter-spacing: 3px;
+    margin-top: 100px;
+}
+
+.clientes{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-top: 100px;
+}
+
+.emily{
+    margin-left: 120px;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.emily p{
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.img-emily{
+    border-radius: 50%;
+    height: 24%;
+}
+
+.thomas{
+    text-align: center;
+    margin-left: 50px;
+}
+
+.thomas p{
+    font-size: 20px;
+    opacity: 0.7;
+    
+}
+
+.img-thomas{
+    border-radius: 50%;
+    height: 24%;
+}
+
+.jennie{
+    text-align: center;
+    margin-left: 50px;
+}
+
+.jennie p{
+    font-size: 20px;
+     opacity: 0.7;
+}
+
+.img-jennie{
+    border-radius: 50%;
+    height: 24%;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    height: 472px;
+    width:200px;
+}
+
+.footer-text{
+    width: 1521px;
+    background-color: #34d5b5;
+    padding: 100px;
+    gap: 20px;
+   
+   
+    
+}
+
+.footer-text h1{
+    text-align: center;
+    font-size: 20px;
+    color: #31665b;
+    
+}
+
+.footer-text p{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: #527a7b;
+}
+
+
+

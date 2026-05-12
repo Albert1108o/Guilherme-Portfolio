@@ -1,0 +1,120 @@
+  /* Reset e estilos globais */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #000000, #ff5733);
+      color: #fff;
+    }
+
+    /* Estilos do header */
+    header {
+      display: flex;
+      align-items: center;
+      background: black;
+      color: white;
+      padding: 20px;
+      text-align: left;
+      justify-content: flex-start;
+      font-family: 'Poppins', Arial, sans-serif;
+    }
+
+    header h1 {
+      margin: 0;
+      display: inline-block;
+      margin-left: 0%;
+    }
+
+    .logo2 .shirt {
+      font-family: "Bebas Neue", sans-serif;
+      color: #ffffff;
+      font-size: 2rem;
+    }
+
+    .logo2 .cycle {
+      font-family: "Poppins", sans-serif;
+      color: #f39c12;
+      font-size: 2rem;
+    }
+
+    header img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      background-color: #ff6347;
+      border-radius: 48%;
+      margin-left: 1%;
+    }
+
+    header a {
+      margin-left: 80%;
+    }
+
+    header img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Estilos do container principal */
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    /* Estilos dos passos */
+    .step {
+      background: #1a1a1a;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .step:hover {
+      transform: scale(1.02);
+    }
+
+    .step h2 {
+      color: #ff4c4c;
+      margin-top: 0;
+    }
+
+    .step p {
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    .highlight {
+      color: #ff4c4c;
+      font-weight: bold;
+    }
+
+    /* Estilos do footer */
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 15px;
+      color: #bbb;
+      margin-top: 40px;
+    }
+
+    /* Estilos dos botões */
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #ff4c4c;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #cc0000;
+    }
+
+    .center {
+      text-align: center;
+      margin-top: 30px;
+    }

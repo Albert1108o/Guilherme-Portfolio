@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShirtCycle</title>
+  <link rel="stylesheet" href="css/pagina-principal.css">
+  <!-- Links para fontes Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  <!-- Seção do cabeçalho com navbar -->
+  <header class="main-navbar">
+    <!-- Parte superior da navbar -->
+    <div class="navbar-top">
+
+      <!-- Parte esquerda da navbar -->
+      <div class="navbar-left">
+        <span class="logo" style="font-size:28px; font-weight:700; color:#ffa200; margin-right:16px;">ShirtCycle</span>
+        <img src="imgs/favicon.ico.jpg" alt="Logo" style="height:48px;">
+      </div>
+
+      <!-- Parte central da navbar -->
+      <div class="navbar-center">
+        <form class="search-bar">
+          <input type="text" placeholder="Buscar camisas..." />
+          <button type="submit">🔍</button>
+        </form>
+      </div>
+
+      <!-- Parte direita da navbar -->
+      <div class="navbar-right">
+        <a href="usuario.html"><img src="imgs/user.png" alt="Minha conta" style="height:28px; margin-right:24px;"></a>
+        <a href="carrinho.html" style="cursor: pointer; text-decoration: none;">
+          <img src="imgs/shopping-cart.png" alt="Meu carrinho" style="height:28px;">
+        </a>
+      </div>
+    </div>
+
+    <!-- Navbar inferior -->
+    <nav class="navbar-menu">
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Coleção</a></li>
+        <li><a href="#">Como funciona</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal com cards das camisas -->
+  <div class="container">
+
+    <!-- Card da camisa PSG -->
+    <div class="card">
+      <img src="imgs/camisa-nike-psg-2025-2026-oficial-masculina-c0c71cf3f58de8229017474067419958-1024-1024.webp" alt="Camisa PSG" />
+      <div class="info">
+        <h2>Camisa Nike PSG</h2>
+        <span>25/26</span>
+      </div>
+      <p class="preco">50 Cartões</p>
+      <a href="compre-psg.html"><button class="btn-trocar">Trocar</button></a>
+    </div>
+
+    <!-- Card da camisa Barcelona -->
+    <div class="card">
+      <img src="imgs/camisa-retro-barcelona-14-15-home-nike-vermelho-azul-imagem1-jpeg11-5f0092def4915a3cf616942218174651-640-0.jpeg.jpg" alt="Barcelona Retrô" />
+      <div class="info">
+        <h2>Camisa Barcelona Retrô Home</h2>
+        <span>14/15</span>
+      </div>
+      <p class="preco">80 Cartões</p>
+      <a href="compre_barca.html"><button class="btn-trocar">Trocar</button></a>
+    </div>
+
+    <!-- Card da camisa Al Nassr -->
+    <div class="card">
+      <img src="imgs/camisa-adidas-al-nassr-2024-2025-azul-oficial-masculina-2-25462c54479f03300c17310004550002-1024-1024.jpg" alt="Al Nassr" />
+      <div class="info">
+        <h2>Camisa Adidas Al Nassr</h2>
+        <span>24/25</span>
+      </div>
+      <p class="preco">65 Cartões</p>
+      <a href="compre_alnassar.html"><button class="btn-trocar">Trocar</button></a>
+    </div>
+  </div>
+
+  <!-- Rodapé da página -->
+  <footer id="footer">
+    <p>© 2025 ShirtCycle - Todos os direitos reservados</p>
+    <p>Contato: <a href="mailto:contato@shirtcycle.com">contato@shirtcycle.com</a> | WhatsApp: (85) 91234-5678</p>
+    <p>Endereço: Rua Angelica Gurguel, 123 - Fortaleza, CE</p>
+  </footer>
+</body>
+</html>
